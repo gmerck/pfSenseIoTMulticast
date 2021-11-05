@@ -144,7 +144,7 @@ Add the ports commonly used in multicast advertising to one alias
 > - Destination: `Single host or alias` : `MulticastRange_Full` alias
 > - Log: *Checked to start, can be disabled*
 > - Description: `Allow <networks> IGMP to multicast address range`
-> - `SHOW ADVANCED`
+> - Advanced Options: `DISPLAY ADVANCED`
 > - Checked: `Allow IP Options`
 > - **`Save`**
 </p>
@@ -165,7 +165,7 @@ Add the ports commonly used in multicast advertising to one alias
 > - Port(s): `(other)`  `CastingPorts` alias
 > - Log: *Check to start, can be disabled*
 > - Description: `Allow <networks> UDP to multicast address range`
-> - `SHOW ADVANCED`
+> - Advanced Options: `DISPLAY ADVANCED`
 > - Checked: `Allow IP Options`
 > - **`Save`**
 
@@ -185,7 +185,7 @@ Add the ports commonly used in multicast advertising to one alias
 > - Interface: `<Select IOT network>`
 > - Address family: `IPv4`
 > - Protocol: `UDP`
-> - Source: `any`
+> - ~~Source: `any`~~ hidden behind "Advanced Options" button anyways.
 > - Port: `any`
 > - Destination: `Single host or alias` : `MulticastRange_Full` alias
 > - Destination Port(s): `(other)` : `CastingPorts` alias
@@ -194,7 +194,7 @@ Add the ports commonly used in multicast advertising to one alias
 > - **`Save`**
 
 </p>
-
+Click `Save` to set in order.
 <p>
 
 > ### Allow output devices to the LAN
@@ -207,13 +207,13 @@ Add the ports commonly used in multicast advertising to one alias
 > - Destination: `LAN net`
 > - Log: *Check to start, can be disabled*
 > - Description: `Allow only casting devices to LAN`
-> - `SHOW ADVANCED`
+> - Advanced Options: `DISPLAY ADVANCED`
 > - Checked: `Allow IP Options`
 > - **`Save`**
 > - Move to 2nd down in list order
 
 </p>
-
+Click `Save` to set in order.
 <p>
 
 > ### Allow IOT network devices to go anwhere but the LAN
