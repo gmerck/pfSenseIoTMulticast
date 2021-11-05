@@ -6,7 +6,7 @@ A walkthrough of configuring pfSense with Avahi and PIMD for multicast to use wi
 Install Avahi and PIMD packages from the Package Manager
 
 # Step 1: Service Setup
-## *Services > Avahi*:
+##  Go to: *Services > Avahi*:
 
 <p>
 
@@ -22,8 +22,8 @@ Install Avahi and PIMD packages from the Package Manager
 
 </p>
 
-## *Services > PIMD*:
-### *PIMD > General*:
+## Go to: *Services > PIMD*:
+### *PIMD > General* tab:
 <p>
 
 \**Note: Do not enable yet\**
@@ -40,9 +40,10 @@ Install Avahi and PIMD packages from the Package Manager
 <p>
 
 > - **`+Add`**
-> - *Select interface to exclude (start with `WAN`)*
+> - *Select interface to *exclude* (start with `WAN`)*
+> - Interface Binding: `Never Bind`
 > - **`Save`**
-  > - *Repeat for IOT and any additional interfaces*
+~~> - *Repeat for IOT and any additional interfaces*~~
 </p>
 
 ### *PIMD > BSR Candidates* tab:
@@ -56,7 +57,7 @@ Install Avahi and PIMD packages from the Package Manager
 </p>
 
 > - **`+Add`**
-> - NO CHANGE - Leave at Interface: `default`
+> - Interface: `default`
 > - **`Save`**
 </p>
 
@@ -78,6 +79,7 @@ Adding the full multicast range...
 > - Network of FQDN: `224.0.0.0` `/3`
 > - Description: `Multicast IP range from 224.0.0.1-239.255.255.255`
 > - **`Save`**
+> - - apply changes if you wish
 </p>
 
 <p>
