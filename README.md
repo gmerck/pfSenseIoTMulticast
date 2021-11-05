@@ -6,7 +6,7 @@ A walkthrough of configuring pfSense with Avahi and PIMD for multicast to use wi
 Install Avahi and PIMD packages from the Package Manager
 
 # Step 1: Service Setup
-##  Go to: *Services > Avahi*:
+##  Go to *Services > Avahi*:
 
 <p>
 
@@ -16,19 +16,19 @@ Install Avahi and PIMD packages from the Package Manager
 > - Uncheck: Disable support for IPv4
 > - Check: Disable support for IPv6
 > - Check: Enable Reflection
-> - Publishing: Enable all publishing
-> - Advanced settings: no change
+> - Publishing: Check `Enable publishing of information...`
+> - - Additional Publish options that appear: **Enable all**
 > - **`Save`**
 
 </p>
 
-## Go to: *Services > PIMD*:
+## Go to *Services > PIMD*:
 ### *PIMD > General* tab:
 <p>
 
 \**Note: Do not enable yet\**
 > - Default Bind: `Bind to All`
-> - Log Level: `Debug` for troubleshooting/startup, otherwise Warning
+> - Log Level: `Debug` for troubleshooting/startup, otherwise `Warning`
 > - CARP: `none`
 > - General Settings: *Leave all blank*
 > - Threshold Type: `Default`
@@ -43,6 +43,7 @@ Install Avahi and PIMD packages from the Package Manager
 > - *Select interface to *exclude* (start with `WAN`)*
 > - Interface Binding: `Never Bind`
 > - **`Save`**
+> 
 ~~> - *Repeat for IOT and any additional interfaces*~~
 </p>
 
@@ -64,11 +65,11 @@ Install Avahi and PIMD packages from the Package Manager
 ### *PIMD > RP Addresses*:
 <p>
 
-> - NO CHANGE - do not add any entries here
+>  *NO CHANGE - do not add any entries here*
 </p>
 
 # Step 2: Firewall Alias setup
-## *Firewall > Aliases*:
+## Under *Firewall > Aliases*:
 ### *Aliases > IP*:
 <p>
 
