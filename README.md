@@ -257,9 +257,11 @@ Modifying the filter.inc config file
 
 > - *Be sure to update information between <> components and remove the <> symbols.*
 > - for example,if my "IOT" netowrk was 192.168.11.0/24: 
+ 
  /*
  $scrubrules .= "scrub in on \$IOT inet proto udp from 192.168.11.0/24 to 239.255.255.250 port 1900 min-ttl 2 {$scrubnodf} {$scrubrnid}     {$mssclamp} fragment reassemble\n";
  */
+ 
 > - Click **`Save`**.
 </p>
 
